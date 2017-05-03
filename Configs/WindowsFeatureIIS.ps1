@@ -1,13 +1,12 @@
-﻿Configuration  WindowsFeatureIIS
+Configuration  WindowsFeatureIIS
 { 
-
-    Node localhost
-    {
-            WindowsFeature InstallWebServer 
-		    { 
-			    Ensure = "Present"
-			    Name = "Web-Server" 
-		    } 
-    }
+	Node localhost
+	{
+		WindowsFeature InstallWebServer 
+		{ 
+			Ensure = "Present"
+			Name = "Web-Server" 
+		} 
+	}
 }
 
